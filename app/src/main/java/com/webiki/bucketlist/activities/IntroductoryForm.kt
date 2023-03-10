@@ -7,6 +7,9 @@ import android.widget.ImageView
 import android.widget.TextView
 import com.webiki.bucketlist.R
 
+/**
+ * Class for creating smth like SPA
+ */
 class IntroductoryForm : AppCompatActivity() {
     private lateinit var welcomeFormTitle: TextView
     private lateinit var welcomeFormImage: ImageView

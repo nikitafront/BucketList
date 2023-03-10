@@ -20,7 +20,8 @@ class SplashScreen : AppCompatActivity() {
         motivationText.setText( texts.get(rnd.nextInt( 3)) ) // not see because activity
                                                                   // started before loading rnd
 //        Thread.sleep(2000) //TODO: delete if main will long-loaded
-        startActivity(Intent(this, MainActivity::class.java))
+        val rndList = arrayListOf(arrayListOf("1", "2"), arrayListOf("3", "4"))
+        startActivity(Intent(this, MainActivity::class.java).putExtra("goals", rndList[Random.nextInt(2)]))
         finish()
 
     }
